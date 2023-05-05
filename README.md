@@ -1,5 +1,25 @@
 ## NeuReach: Learning Reachability Functions from Simulations
 
+NeuReach is a tool that uses neural networks to predict reachable sets from executions of a dynamical system. The full paper is [available online](https://link.springer.com/chapter/10.1007/978-3-030-99524-9_17).
+
+If you find this project useful, please cite
+```
+@inproceedings{sun2022neureach,
+  title={NeuReach: Learning reachability functions from simulations},
+  author={Sun, Dawei and Mitra, Sayan},
+  booktitle={Tools and Algorithms for the Construction and Analysis of Systems: 28th International Conference, TACAS 2022, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2022, Munich, Germany, April 2--7, 2022, Proceedings, Part I},
+  pages={322--337},
+  year={2022},
+  organization={Springer}
+}
+```
+
+### Requirements
+NeuReach uses Python 3. To install the requirements:
+```
+pip3 install -r requirements.txt
+```
+
 ### Create the model file
 The user needs to create a Python file describing the underlying system and providing a simulator. Examples can be found in the ```systems``` directory. Specifically, the user must define the following functions.
 ```python
